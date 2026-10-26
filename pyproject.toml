@@ -1,0 +1,66 @@
+[project]
+name = "billmeter"
+version = "0.1.0"
+description = "Model-agnostic extraction of structured data from Italian utility bills, with a built-in evaluation harness."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Antonio Tamburello" }]
+dependencies = [
+    "pydantic>=2.6",
+    "typer>=0.12",
+    "rich>=13.7",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "pypdfium2>=4.30",
+    "pillow>=10.0",
+    "pillow-heif>=0.18",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40"]
+openai = ["openai>=1.50"]
+gemini = ["google-genai>=1.0"]
+all = ["anthropic>=0.40", "openai>=1.50", "google-genai>=1.0"]
+dataset = ["reportlab>=4.0", "faker>=25.0"]
+dev = ["pytest>=8.0", "reportlab>=4.0", "faker>=25.0", "ruff>=0.6", "mypy>=1.11"]
+
+[project.scripts]
+billmeter = "billmeter.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/billmeter"]
+
+# The prompts and the price list live at the top of the repository, where they are
+# easy to read and to diff. Shipping a copy inside the wheel keeps `billmeter`
+# working when it is installed and run from any other folder.
+[tool.hatch.build.targets.wheel.force-include]
+"prompts" = "billmeter/prompts"
+"pricing.json" = "billmeter/pricing.json"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM"]
+# Optional[X] reads better than X | None in a signature with defaults, and the
+# project targets Python 3.10, where both are valid.
+ignore = ["UP007", "UP045"]
+
+[tool.ruff.lint.per-file-ignores]
+# typer.Option(...) as a default value is the framework's own idiom.
+"src/billmeter/cli.py" = ["B008"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["src/billmeter"]
+ignore_missing_imports = true

@@ -1,0 +1,28 @@
+# secrets
+.env
+
+# personal study notes (Italian), not part of the release
+docs/
+
+# private data: real bills and their results never go to git
+dataset/private/*
+!dataset/private/README.md
+eval/results/private/
+eval/reports/private/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# os / editors
+.DS_Store
+.vscode/
+.idea/
+dataset/prova/

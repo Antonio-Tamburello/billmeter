@@ -1,0 +1,56 @@
+{
+  "_readme": "USD per million tokens. Copy current prices from each provider's pricing page; models not listed show tokens only. 'provider:*' is a wildcard.",
+  "_note_haiku_long_prompts": "anthropic:claude-haiku-5-5 is priced 0.10/0.50 up to a 100K-token prompt and 0.50/2.50 beyond it; the figures below are the short-prompt tier, which is the one this project's requests fall in.",
+  "_example": {
+    "input_per_mtok": 1.0,
+    "output_per_mtok": 5.0
+  },
+  "ollama:*": {
+    "input_per_mtok": 0,
+    "output_per_mtok": 0
+  },
+  "lmstudio:*": {
+    "input_per_mtok": 0,
+    "output_per_mtok": 0
+  },
+  "anthropic:claude-fable-5-1": {
+    "input_per_mtok": 10.0,
+    "output_per_mtok": 50.0
+  },
+  "anthropic:claude-fable-5": {
+    "input_per_mtok": 10.0,
+    "output_per_mtok": 50.0
+  },
+  "anthropic:claude-opus-5-5": {
+    "input_per_mtok": 4.0,
+    "output_per_mtok": 20.0
+  },
+  "anthropic:claude-opus-5": {
+    "input_per_mtok": 5.0,
+    "output_per_mtok": 25.0
+  },
+  "anthropic:claude-opus-4-8": {
+    "input_per_mtok": 5.0,
+    "output_per_mtok": 25.0
+  },
+  "anthropic:claude-sonnet-5-5": {
+    "input_per_mtok": 2.0,
+    "output_per_mtok": 10.0
+  },
+  "anthropic:claude-sonnet-5": {
+    "input_per_mtok": 2.0,
+    "output_per_mtok": 10.0
+  },
+  "anthropic:claude-sonnet-4-6": {
+    "input_per_mtok": 3.0,
+    "output_per_mtok": 15.0
+  },
+  "anthropic:claude-haiku-5-5": {
+    "input_per_mtok": 0.1,
+    "output_per_mtok": 0.5
+  },
+  "anthropic:claude-haiku-4-5": {
+    "input_per_mtok": 1.0,
+    "output_per_mtok": 5.0
+  }
+}

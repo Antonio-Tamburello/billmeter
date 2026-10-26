@@ -1,0 +1,877 @@
+{
+  "name": "synthetic",
+  "description": "24 synthetic bills + 6 phone-photo variants, seed=42. All data is fake.",
+  "contains_real_data": false,
+  "cases": [
+    {
+      "id": "syn-001",
+      "file": "bills/syn-001.pdf",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E80801586",
+        "pdr": null,
+        "holder_name": "Silvia Caracciolo",
+        "holder_tax_code": "CRCSLV74P44G273C",
+        "supply_address": "Contrada Gioele 23, 85432 Bauladu CR",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 292,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-001-photo",
+      "file": "bills/syn-001-photo.jpg",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_A",
+        "photo"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E80801586",
+        "pdr": null,
+        "holder_name": "Silvia Caracciolo",
+        "holder_tax_code": "CRCSLV74P44G273C",
+        "supply_address": "Contrada Gioele 23, 85432 Bauladu CR",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 292,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-002",
+      "file": "bills/syn-002.pdf",
+      "tags": [
+        "power",
+        "power_nonresident",
+        "layout_B",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT020E35503389",
+        "pdr": null,
+        "holder_name": "Ornella Broschi",
+        "holder_tax_code": "BRSRLL74T56H501G",
+        "supply_address": "Piazza Baggio 87, 23094 San Giovanni Battista BN",
+        "is_resident": false,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 5645,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 864,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-002-photo",
+      "file": "bills/syn-002-photo.jpg",
+      "tags": [
+        "power",
+        "power_nonresident",
+        "layout_B",
+        "photo"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT020E35503389",
+        "pdr": null,
+        "holder_name": "Ornella Broschi",
+        "holder_tax_code": "BRSRLL74T56H501G",
+        "supply_address": "Piazza Baggio 87, 23094 San Giovanni Battista BN",
+        "is_resident": false,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 5645,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 864,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-003",
+      "file": "bills/syn-003.pdf",
+      "tags": [
+        "gas",
+        "gas",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "gas",
+        "pod": null,
+        "pdr": "14215768301490",
+        "holder_name": "Alfredo Zamorani",
+        "holder_tax_code": "ZMRLRD57A26F839V",
+        "supply_address": "Canale Iolanda 18, 15677 Male' PU",
+        "is_resident": null,
+        "contracted_power_kw": null,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": null,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 127,
+        "gas_annual_consumption_smc": 684
+      }
+    },
+    {
+      "id": "syn-003-photo",
+      "file": "bills/syn-003-photo.jpg",
+      "tags": [
+        "gas",
+        "gas",
+        "layout_C",
+        "photo"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "gas",
+        "pod": null,
+        "pdr": "14215768301490",
+        "holder_name": "Alfredo Zamorani",
+        "holder_tax_code": "ZMRLRD57A26F839V",
+        "supply_address": "Canale Iolanda 18, 15677 Male' PU",
+        "is_resident": null,
+        "contracted_power_kw": null,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": null,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 127,
+        "gas_annual_consumption_smc": 684
+      }
+    },
+    {
+      "id": "syn-004",
+      "file": "bills/syn-004.pdf",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT020E43524491",
+        "pdr": "07871712980537",
+        "holder_name": "Gianna Alboni",
+        "holder_tax_code": "LBNGNN83C59L219Z",
+        "supply_address": "Incrocio Massimiliano 63, 30473 San Giorgio In Salici FG",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 5646,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 836,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 236,
+        "gas_annual_consumption_smc": 723
+      }
+    },
+    {
+      "id": "syn-004-photo",
+      "file": "bills/syn-004-photo.jpg",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "photo"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT020E43524491",
+        "pdr": "07871712980537",
+        "holder_name": "Gianna Alboni",
+        "holder_tax_code": "LBNGNN83C59L219Z",
+        "supply_address": "Incrocio Massimiliano 63, 30473 San Giorgio In Salici FG",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 5646,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 836,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 236,
+        "gas_annual_consumption_smc": 723
+      }
+    },
+    {
+      "id": "syn-005",
+      "file": "bills/syn-005.pdf",
+      "tags": [
+        "power",
+        "business_power",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E53606628",
+        "pdr": null,
+        "holder_name": "Cabibbo s.r.l.",
+        "holder_tax_code": null,
+        "supply_address": "Rotonda Rossana 37, 43142 Miglionico AQ",
+        "is_resident": null,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": 4361,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 821,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-005-photo",
+      "file": "bills/syn-005-photo.jpg",
+      "tags": [
+        "power",
+        "business_power",
+        "layout_A",
+        "photo"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E53606628",
+        "pdr": null,
+        "holder_name": "Cabibbo s.r.l.",
+        "holder_tax_code": null,
+        "supply_address": "Rotonda Rossana 37, 43142 Miglionico AQ",
+        "is_resident": null,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": 4361,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 821,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-006",
+      "file": "bills/syn-006.pdf",
+      "tags": [
+        "power",
+        "power_no_annual",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E72070937",
+        "pdr": null,
+        "holder_name": "Delfino Pareto",
+        "holder_tax_code": "PRTDFN59S02D612W",
+        "supply_address": "Stretto Lando 98, 86479 Molino Del Piano VR",
+        "is_resident": true,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 846,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-006-photo",
+      "file": "bills/syn-006-photo.jpg",
+      "tags": [
+        "power",
+        "power_no_annual",
+        "layout_A",
+        "photo"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E72070937",
+        "pdr": null,
+        "holder_name": "Delfino Pareto",
+        "holder_tax_code": "PRTDFN59S02D612W",
+        "supply_address": "Stretto Lando 98, 86479 Molino Del Piano VR",
+        "is_resident": true,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 846,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-007",
+      "file": "bills/syn-007.pdf",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT001E50185867",
+        "pdr": null,
+        "holder_name": "Antonia Beccheria",
+        "holder_tax_code": "BCCNTN64C50D969Y",
+        "supply_address": "Contrada Bernardo 46, 74934 Cavanella Vara VT",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 5586,
+        "period_start": "2026-01-01",
+        "period_end": "2026-02-28",
+        "period_consumption_kwh": 889,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-008",
+      "file": "bills/syn-008.pdf",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT020E16879290",
+        "pdr": "92849154442077",
+        "holder_name": "Rodolfo Ossani",
+        "holder_tax_code": "SSNRLF50A19L219U",
+        "supply_address": "Rotonda Michelangelo 62, 82969 Caravonica CO",
+        "is_resident": true,
+        "contracted_power_kw": 6.0,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": 169,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 170,
+        "gas_annual_consumption_smc": 569
+      }
+    },
+    {
+      "id": "syn-009",
+      "file": "bills/syn-009.pdf",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_B",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT020E74346088",
+        "pdr": null,
+        "holder_name": "Fausto Udinese",
+        "holder_tax_code": "DNSFST98E20G273E",
+        "supply_address": "Via Romolo 133, 67123 Mirabella Eclano LI",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 3457,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": 558,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-010",
+      "file": "bills/syn-010.pdf",
+      "tags": [
+        "power",
+        "power_nonresident",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT012E54634663",
+        "pdr": null,
+        "holder_name": "Manuel Bertolucci",
+        "holder_tax_code": "BRTMNL55D14G273E",
+        "supply_address": "Piazza Olga 172, 72219 Concadirame GR",
+        "is_resident": false,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 943,
+        "period_start": "2026-01-01",
+        "period_end": "2026-02-28",
+        "period_consumption_kwh": 182,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-011",
+      "file": "bills/syn-011.pdf",
+      "tags": [
+        "gas",
+        "gas",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "gas",
+        "pod": null,
+        "pdr": "34991567867431",
+        "holder_name": "Pierina Medici",
+        "holder_tax_code": "MDCPRN88A41A944Y",
+        "supply_address": "Canale Telemaco 14, 96669 Castello LU",
+        "is_resident": null,
+        "contracted_power_kw": null,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": null,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 79,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-012",
+      "file": "bills/syn-012.pdf",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT012E64606833",
+        "pdr": "23167305431760",
+        "holder_name": "Gioffre Zamorani",
+        "holder_tax_code": "ZMRGFR62L30A944I",
+        "supply_address": "Vicolo Renzi 26, 16667 Aquino PN",
+        "is_resident": true,
+        "contracted_power_kw": 6.0,
+        "annual_consumption_kwh": 2085,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 435,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 129,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-013",
+      "file": "bills/syn-013.pdf",
+      "tags": [
+        "power",
+        "business_power",
+        "layout_B",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT020E71286543",
+        "pdr": null,
+        "holder_name": "Taccola, Burcardo e Bellini SPA",
+        "holder_tax_code": null,
+        "supply_address": "Canale Ermes 139, 17765 Pierantonio UD",
+        "is_resident": null,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 1492,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": 308,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-014",
+      "file": "bills/syn-014.pdf",
+      "tags": [
+        "power",
+        "power_no_annual",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT012E27415205",
+        "pdr": null,
+        "holder_name": "Orazio Scialpi",
+        "holder_tax_code": "SCLRZO56B24F205V",
+        "supply_address": "Stretto Amato 64, 84608 Blandino SS",
+        "is_resident": true,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": 563,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-015",
+      "file": "bills/syn-015.pdf",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_B",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT001E32787299",
+        "pdr": null,
+        "holder_name": "Gemma Morpurgo",
+        "holder_tax_code": "MRPGMM76S70D969M",
+        "supply_address": "Contrada Raffaellino 26, 19550 Levico Terme CB",
+        "is_resident": true,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": 1225,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": 224,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-016",
+      "file": "bills/syn-016.pdf",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT020E65569635",
+        "pdr": "12988199282703",
+        "holder_name": "Ferdinando Tomaselli",
+        "holder_tax_code": "TMSFDN77B20H501G",
+        "supply_address": "Canale Lazzaro 40, 44288 Leffe VV",
+        "is_resident": true,
+        "contracted_power_kw": 6.0,
+        "annual_consumption_kwh": 5614,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": 829,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 41,
+        "gas_annual_consumption_smc": 403
+      }
+    },
+    {
+      "id": "syn-017",
+      "file": "bills/syn-017.pdf",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT012E17105448",
+        "pdr": null,
+        "holder_name": "Ernesto Vattimo",
+        "holder_tax_code": "VTTRST73L02D612O",
+        "supply_address": "Vicolo Luigi 177, 29558 Berzano Di Tortona OT",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": 3881,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": 714,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-018",
+      "file": "bills/syn-018.pdf",
+      "tags": [
+        "power",
+        "power_nonresident",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT001E24073380",
+        "pdr": null,
+        "holder_name": "Livio Giradello",
+        "holder_tax_code": "GRDLVI68S05G273L",
+        "supply_address": "Borgo Tina 159, 29947 Martinengo PI",
+        "is_resident": false,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": 3525,
+        "period_start": "2026-01-01",
+        "period_end": "2026-02-28",
+        "period_consumption_kwh": 512,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-019",
+      "file": "bills/syn-019.pdf",
+      "tags": [
+        "gas",
+        "gas",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "gas",
+        "pod": null,
+        "pdr": "42951174731491",
+        "holder_name": "Bartolomeo Tutino",
+        "holder_tax_code": "TTNBTL72D06F839M",
+        "supply_address": "Via Flora 28, 58893 Birgi Aerostazione NO",
+        "is_resident": null,
+        "contracted_power_kw": null,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-03-01",
+        "period_end": "2026-04-30",
+        "period_consumption_kwh": null,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 240,
+        "gas_annual_consumption_smc": 1214
+      }
+    },
+    {
+      "id": "syn-020",
+      "file": "bills/syn-020.pdf",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT001E14549543",
+        "pdr": "61158601581772",
+        "holder_name": "Ludovica Franscini",
+        "holder_tax_code": "FRNLVC67D70A944O",
+        "supply_address": "Contrada Pasqual 138, 52961 Baratte SA",
+        "is_resident": true,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": 2841,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": 435,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 110,
+        "gas_annual_consumption_smc": 846
+      }
+    },
+    {
+      "id": "syn-021",
+      "file": "bills/syn-021.pdf",
+      "tags": [
+        "power",
+        "business_power",
+        "layout_A",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Luce Chiara S.p.A.",
+        "bill_type": "power",
+        "pod": "IT020E42133044",
+        "pdr": null,
+        "holder_name": "Granatelli e figli",
+        "holder_tax_code": null,
+        "supply_address": "Rotonda Alessandro 138, 97736 Inarzo PZ",
+        "is_resident": null,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-05-01",
+        "period_end": "2026-06-30",
+        "period_consumption_kwh": 195,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-022",
+      "file": "bills/syn-022.pdf",
+      "tags": [
+        "power",
+        "power_no_annual",
+        "layout_B",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT012E73542887",
+        "pdr": null,
+        "holder_name": "Benedetto Biagiotti",
+        "holder_tax_code": "BGTBDT86M22L219F",
+        "supply_address": "Strada Amedeo 108, 95962 San Giorgio Di Livenza IS",
+        "is_resident": true,
+        "contracted_power_kw": 3.0,
+        "annual_consumption_kwh": null,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": 863,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-023",
+      "file": "bills/syn-023.pdf",
+      "tags": [
+        "power",
+        "power_resident",
+        "layout_B",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Aurora Energia S.r.l.",
+        "bill_type": "power",
+        "pod": "IT001E31523529",
+        "pdr": null,
+        "holder_name": "Susanna Spanevello",
+        "holder_tax_code": "SPNSNN78S69D969F",
+        "supply_address": "Stretto Donatello 44, 94086 Oliveto Citra TA",
+        "is_resident": true,
+        "contracted_power_kw": 4.5,
+        "annual_consumption_kwh": 3154,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": 602,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": null,
+        "gas_annual_consumption_smc": null
+      }
+    },
+    {
+      "id": "syn-024",
+      "file": "bills/syn-024.pdf",
+      "tags": [
+        "dual",
+        "dual",
+        "layout_C",
+        "pdf"
+      ],
+      "expected": {
+        "supplier_name": "Nordgas & Luce S.p.A.",
+        "bill_type": "dual",
+        "pod": "IT001E57062156",
+        "pdr": "24752836442375",
+        "holder_name": "Loretta Favata",
+        "holder_tax_code": "FVTLTT54B63G273R",
+        "supply_address": "Strada Flora 179, 59506 Sant'Angelo Del Pesco ME",
+        "is_resident": true,
+        "contracted_power_kw": 6.0,
+        "annual_consumption_kwh": 3742,
+        "period_start": "2026-07-01",
+        "period_end": "2026-08-31",
+        "period_consumption_kwh": 775,
+        "gas_period_start": null,
+        "gas_period_end": null,
+        "gas_period_consumption_smc": 93,
+        "gas_annual_consumption_smc": 1339
+      }
+    }
+  ]
+}
