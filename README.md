@@ -90,6 +90,36 @@ as source rather than rendering it.
 
 **→ [Full results](RESULTS.md)** · **[How it works](HOW-IT-WORKS.md)**
 
+## Used in production
+
+The same method, applied at work to an LLM bill reader that runs in production for every user (two
+models in parallel, OpenAI and Gemini, on real Italian bills). Every field was graded against what
+the bill says on the same **44 real bills**, before and after changing the prompt and the OpenAI
+model:
+
+| Field | Before | After |
+|---|---|---|
+| Annual consumption (calculated) | 8/20 | **18/20** |
+| Annual consumption (on the bill) | 10/15 | **15/15** |
+| Meter power | 11/15 | **14/15** |
+| Tax code | 13/16 | **16/16** |
+| POD (electricity supply point) | 14/15 | **15/15** |
+| PDR (gas supply point) | 15/16 | **16/16** |
+| Bill type | 15/16 | **16/16** |
+| Holder name | 14/15 | **15/15** |
+| Installation address | 20/21 | **21/21** |
+| Resident | 15/15 | 15/15 |
+| **All fields** | 135/164 · 82.3 % | **161/164 · 98.2 %** |
+
+| Cost per bill | Change |
+|---|---|
+| OpenAI step | **−90.7 %** |
+| **Whole pipeline** | **−41.7 %** |
+
+A single score would have hidden where the gain came from: the calculated annual consumption was by
+far the worst field and became one of the main gains. 44 bills is a small sample, still to be confirmed on a
+fresh set. The bills, prompts and production code stay private; none of them is in this repository.
+
 ## Quickstart
 
 Requirements: [uv](https://docs.astral.sh/uv/). No API key needed for any of this.
